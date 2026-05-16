@@ -1,0 +1,47 @@
+name: Weekly Claude Cost Optimization Briefing
+
+on:
+  # Runs every Saturday at 7:00 AM America/Phoenix.
+  # GitHub Actions schedules use UTC; 7:00 AM Phoenix = 14:00 UTC.
+  schedule:
+    - cron: "0 14 * * 6"
+
+  # Also lets you trigger it manually from the GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Research topic for the briefing"
+        required: false
+        default: "Claude Cowork and Claude Code cost optimization"
+
+jobs:
+  run-briefing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the briefing
+        env:
+          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL:      ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          MAX_ARTICLES_PER_SOURCE: ${{ vars.MAX_ARTICLES_PER_SOURCE || '2' }}
+          MAX_TOTAL_ARTICLES:      ${{ vars.MAX_TOTAL_ARTICLES || '0' }}
+          SMTP_HOST:         ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:         ${{ secrets.SMTP_PORT }}
+          SMTP_USER:         ${{ secrets.SMTP_USER }}
+          SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+          EMAIL_TO:          ${{ secrets.EMAIL_TO }}
+        run: |
+          TOPIC="${{ github.event.inputs.topic || 'Claude Cowork and Claude Code cost optimization' }}"
+          echo "Running briefing for topic: $TOPIC"
+          python orchestrator.py "$TOPIC"

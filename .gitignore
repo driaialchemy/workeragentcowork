@@ -1,0 +1,34 @@
+# Environment — never commit credentials
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# SQLite database (generated at runtime)
+*.db
+
+# Generated report/output folders, if you choose to export reports locally
+reports/
+output/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local settings
+.claude/

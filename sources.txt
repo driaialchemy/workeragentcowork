@@ -1,0 +1,36 @@
+# sources.txt
+# Claude Cowork and Claude Code cost optimization sources.
+# One URL per line. Lines starting with # are ignored.
+# Edit this file to add or remove research sources for future runs.
+
+# Anthropic product, docs, pricing, and support
+https://www.anthropic.com
+https://www.anthropic.com/news
+https://docs.anthropic.com
+https://support.anthropic.com
+https://docs.anthropic.com/en/docs/claude-code
+https://docs.anthropic.com/en/docs/about-claude/pricing
+
+# AI FinOps, governance, management, and operating-model research
+https://www.deloitte.com
+https://www.mckinsey.com
+https://www.gartner.com
+https://www.ibm.com/think
+https://www.accenture.com
+https://www.pwc.com
+https://www.kpmg.com
+https://www.ey.com
+https://www.bcg.com
+https://www.bain.com
+https://mitsloan.mit.edu
+https://hai.stanford.edu
+https://www.brookings.edu
+https://www.rand.org
+https://www.nist.gov/artificial-intelligence
+https://oecd.ai
+https://www.weforum.org
+
+# Cloud, developer productivity, and adjacent AI cost guidance
+https://www.microsoft.com
+https://cloud.google.com
+https://openai.com
