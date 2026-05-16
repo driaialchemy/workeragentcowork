@@ -9,7 +9,23 @@ https://www.anthropic.com/news
 https://docs.anthropic.com
 https://support.anthropic.com
 https://docs.anthropic.com/en/docs/claude-code
+https://docs.anthropic.com/en/docs/claude-code/overview
+https://docs.anthropic.com/en/docs/claude-code/costs
+https://docs.anthropic.com/en/docs/claude-code/settings
+https://docs.anthropic.com/en/docs/claude-code/memory
+https://docs.anthropic.com/en/docs/claude-code/mcp
+https://docs.anthropic.com/en/docs/claude-code/slash-commands
+https://docs.anthropic.com/en/docs/claude-code/sub-agents
+https://docs.anthropic.com/en/docs/claude-code/hooks
+https://docs.anthropic.com/en/docs/claude-code/hooks-guide
+https://docs.anthropic.com/en/docs/claude-code/data-usage
 https://docs.anthropic.com/en/docs/about-claude/pricing
+https://docs.anthropic.com/en/api/usage-cost-api
+https://support.anthropic.com/en/articles/11014257-about-claude-s-max-plan-usage
+https://support.anthropic.com/en/articles/11647753-understanding-usage-and-length-limits
+https://support.anthropic.com/en/articles/9797557-usage-limit-best-practices
+https://support.anthropic.com/en/articles/9267304-about-claude-for-work-team-and-enterprise-plan-usage
+https://support.anthropic.com/en/articles/12005970-extra-usage-for-claude-for-work-team-and-enterprise-plans
 
 # AI FinOps, governance, management, and operating-model research
 https://www.deloitte.com
