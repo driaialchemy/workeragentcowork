@@ -96,15 +96,15 @@ Python 3.11 or newer is recommended.
 Copy `.env.example` to `.env` and fill in your real values:
 
 ```text
-OPENAI_API_KEY=sk-your-real-key-here
+OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
 MAX_ARTICLES_PER_SOURCE=2
 MAX_TOTAL_ARTICLES=0
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=your-gmail@gmail.com
-SMTP_APP_PASSWORD=xxxx xxxx xxxx xxxx
-EMAIL_TO=recipient@example.com
+SMTP_USER=
+SMTP_APP_PASSWORD=
+EMAIL_TO=
 ```
 
 Only `OPENAI_API_KEY` is required for normal report generation. Email settings are optional.
@@ -187,9 +187,9 @@ Set these values in `.env`:
 ```text
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=your-gmail@gmail.com
-SMTP_APP_PASSWORD=your-app-password
-EMAIL_TO=recipient@example.com
+SMTP_USER=
+SMTP_APP_PASSWORD=
+EMAIL_TO=
 ```
 
 If `EMAIL_TO` is blank and no `--email` argument is supplied, the app still runs and prints the report locally.
