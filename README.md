@@ -272,7 +272,7 @@ workeragentcowork
 Destination:
 
 ```text
-https://github.com/draialchemy/workeragentcowork
+https://github.com/driaialchemy/workeragentcowork
 ```
 
 Initial deployment commands:
@@ -283,14 +283,14 @@ git init
 git add .
 git commit -m "Refocus working briefing agent for Claude cost optimization"
 git branch -M main
-git remote add origin https://github.com/draialchemy/workeragentcowork.git
+git remote add origin https://github.com/driaialchemy/workeragentcowork.git
 git push -u origin main
 ```
 
 If a remote already exists:
 
 ```powershell
-git remote set-url origin https://github.com/draialchemy/workeragentcowork.git
+git remote set-url origin https://github.com/driaialchemy/workeragentcowork.git
 git push -u origin main
 ```
 
@@ -323,4 +323,4 @@ Check spam, confirm SMTP settings, and use a Gmail App Password if using Gmail.
 - [ ] No API keys or SMTP credentials are hardcoded.
 - [ ] GitHub Secrets are used for credentials.
 - [ ] `briefing.db` and generated output folders are not committed.
-- [ ] The GitHub remote is `https://github.com/draialchemy/workeragentcowork.git`.
+- [ ] The GitHub remote is `https://github.com/driaialchemy/workeragentcowork.git`.
