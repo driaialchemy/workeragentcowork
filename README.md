@@ -4,6 +4,26 @@
 
 It is adapted from the existing working Intelligence Briefing System. The architecture, command-line flow, SQLite storage, optional email delivery, Docker support, and GitHub Actions workflow are preserved. The research topic, source list, report framing, examples, and deployment target have been refocused for Claude Cowork and Claude Code cost optimization.
 
+## For A Novice Reader
+
+This app creates research briefings about Claude Cowork and Claude Code cost
+optimization. You provide a topic and source list, and it collects material,
+summarizes what it finds, checks important claims, writes a plain-text report,
+saves the work, and can optionally email the result.
+
+The practical goal is to help people understand and manage AI tool costs,
+especially around token usage, workflow scope, automation overhead, and team
+usage patterns.
+
+## For A Technical Reader
+
+The repo reuses a Python planner-worker briefing architecture with topic-specific
+sources and report framing. `orchestrator.py` coordinates planner output,
+web collection, summarization, verification, writing, optional SMTP delivery,
+and SQLite persistence through `briefing.db`. Configuration comes from ignored
+`.env` files, source URLs are editable in `sources.txt`, and the repo includes
+Docker plus GitHub Actions scaffolding for repeatable scheduled runs.
+
 ## What The App Does
 
 You give the app a research topic such as `Claude Cowork and Claude Code cost optimization`. It then:
