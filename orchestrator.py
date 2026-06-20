@@ -274,6 +274,12 @@ def run(topic, email_to=None, verbose=True):
         )
 
     print()
+    from governance_logger import log_success
+    log_success("workeragentcowork", "Agent completed successfully", {
+        "topic": topic,
+        "run_id": run_id,
+        "result": report[:500] if report else None
+    })
     return report
 
 
